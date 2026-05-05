@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Practise</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>This is Web-programming practice</h1>
+    </header>
+    <div class="container">
+        <main>
+            <div class="game">
+                <div class="buttons">
+                    <button data-dir="up">U</button>
+                    <button data-dir="left">L</button>
+                    <button data-dir="right">R</button>
+                    <button data-dir="down">D</button>
+                </div>
+                <div class="stats">
+                    <div>
+                        <button data-dir="start">Start</button>
+                        <button data-dir="reset">Reset scores</button>
+                    </div>
+                    <div>
+                        <p>Speed: <span id="speed"></span></p>
+                        <p>Score: <span id="score"></span></p>
+                    </div>
+                    <div>
+                        <h3>High score</h3>
+                        <ol id="highscores"></ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="spedenspelit.html">SpedenSpelit</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <hr>
+            <p>Clicks: <span id="click-count"></span></p>
+
+        </aside>
+    </div>
+    <script src="./js/functions.js"></script>
+    <script src="./js/spedenspelit.js"></script>
+</body>
+
+</html>

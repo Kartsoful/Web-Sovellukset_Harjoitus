@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Practise</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>This is Web-programming practice</h1>
+    </header>
+    <div class="container">
+        <main>
+            <h2>Introduction</h2>
+            <p style="border: none">This site is created by second year student in OAMK and is a part of course
+                "Web-sovellusten perusteet".
+                This is my first web page which includes couple of sections.<br>
+                This page includes following sections and elements:</p>
+            <ul>
+                <li>Main page</li>
+                <li>SpedenSpelit</li>
+                <li>About</li>
+            </ul>
+            <p style="border: none">This practice incluldes html-code with css-styling and some JavaScript code. In main
+                page you can find some text and image.
+                In spedenSpelit you can challenge yourself a bit. Game will increace speed every 10th index and has a maxium speed
+                limit at 8,3Hz. It also saves locally ten best scores. You can also reset your scores. In about page you can find what is behind about this website.
+            </p>
+
+            <img src="images/Karikatyyri.png" alt="Karikatyyri"
+                style="max-height:300px;max-width:300px;padding:0;margin-left:2rem">
+            <p style="border: none;font-style:italic;padding:0;margin:0;margin-left:2rem">Karikatyre from me</p>
+        </main>
+
+        <aside>
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="spedenspelit.html">SpedenSpelit</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+                        <hr>
+       <p>Clicks: <span id="click-count"></span></p>
+        </aside>
+    </div>
+    <script src="./js/functions.js"></script>
+</body>
+
+</html>
