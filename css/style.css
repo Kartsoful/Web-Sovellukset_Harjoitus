@@ -93,7 +93,8 @@ main h3 {
 main img {
     margin-left: var(--base-gap) auto;
     padding: calc(var(--base-gap) * 2);
-    max-width: 650px;
+    max-width: 60vw;
+
 }
 
 main ul {

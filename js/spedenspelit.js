@@ -70,8 +70,8 @@ function startLoop() {
 
         highLight(random)
         playBeep(random)
-        if (guesses.length % 5 === 0) {
-            speed = Math.max(120, speed * 0.9)
+        if (guesses.length % 1 === 0) {
+            speed = Math.max(120, speed * 0.99)
 
             clearInterval(intervalId)
             startLoop();
@@ -96,7 +96,7 @@ function highLight(dir) {
 
     setTimeout(() => {
         btn.style.background = ""
-    }, speed / 2)
+    }, speed / 3)
 }
 
 function handleMovement(action) {
