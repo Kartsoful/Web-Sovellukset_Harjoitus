@@ -12,8 +12,9 @@ Sivustolla on kolme sivua:
 
 ## Tekniikat
 
-- HTML5
-- CSS3 (erillinen `style.css`)
+- HTML
+- CSS
+- JS
 
 ## Ominaisuudet
 
@@ -24,4 +25,4 @@ Sivustolla on kolme sivua:
 
 ---
 
-Projekti on tehty opiskelutarkoituksessa ja toimii täysin paikallisesti
+Projekti on tehty opiskelutarkoituksessa ja toimii täysin paikallisesti (pl. OAMK:n logo)
