@@ -15,19 +15,6 @@ Sivustolla on kolme sivua:
 - HTML5
 - CSS3 (erillinen `style.css`)
 
-## Tiedostorakenne
-
-├── index.html
-├── about.html
-├── spedenspelit.html
-├── css/
-│   └── style.css
-├── js/
-│   ├── functions.js
-│   └── spedenspelit.js
-└── images/
-
-
 ## Ominaisuudet
 
 - Responsiivinen ulkoasu
