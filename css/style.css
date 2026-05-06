@@ -103,6 +103,10 @@ main ul {
     margin-left: calc(var(--base-gap) * 2);
 }
 
+main li {
+    margin: calc(var(--base-gap) / 3);
+}
+
 .game {
     margin: var(--base-gap);
     padding: var(--base-gap);
