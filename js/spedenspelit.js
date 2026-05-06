@@ -34,6 +34,11 @@ buttons.forEach(btn => {
 })
 
 document.addEventListener("keydown", (e) => {
+
+    if (e.repeat) {
+        return;
+    }
+
     const keyMap = {
         ArrowUp: "up",
         ArrowDown: "down",
@@ -70,13 +75,15 @@ function startLoop() {
 
         highLight(random)
         playBeep(random)
-        if (guesses.length % 1 === 0) {
-            speed = Math.max(120, speed * 0.99)
+
+        if (guesses.length % 3 === 0) {
+            speed = Math.max(120, speed * 0.97)
 
             clearInterval(intervalId)
             startLoop();
         }
     }, speed)
+
     let speedHz = (1000 / speed).toFixed(2)
     document.getElementById("speed").innerHTML = `${speedHz} Hz`
 }
@@ -100,6 +107,7 @@ function highLight(dir) {
 }
 
 function handleMovement(action) {
+
     if (!(gameIsActive)) {
         return
     }
