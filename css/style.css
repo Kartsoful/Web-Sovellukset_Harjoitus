@@ -94,6 +94,7 @@ main img {
     margin-left: var(--base-gap) auto;
     padding: calc(var(--base-gap) * 2);
     max-width: 60vw;
+    max-width: 450px;
 
 }
 
@@ -173,4 +174,36 @@ button[data-dir="down"] {
     margin:0;
     padding:0;
     border: none;
+}
+
+@media (max-width: 650px) {
+
+    .container {
+        flex-direction: column;
+        min-height: calc(100vh - var(--header-height));
+    }
+
+    main {
+        flex: 1;
+    }
+
+    aside {
+        margin: 0;
+        padding: 0;
+        order: -1;
+        position: static;
+        width: 100%;
+        max-height: 140px;
+    }
+
+    aside ul {
+        padding: 0.2rem;
+        margin: 0.5rem;
+    }
+
+    aside ul li {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+
 }
