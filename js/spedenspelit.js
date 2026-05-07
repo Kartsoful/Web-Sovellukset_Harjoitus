@@ -8,7 +8,6 @@ const frequencies = {
     right: 800
 };
 
-
 let speed = 1000
 let playerIndex = 0
 let guesses = []
@@ -19,7 +18,6 @@ let highscores = JSON.parse(localStorage.getItem("spedenScoret")) || []
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
         const action = btn.dataset.dir;
-        console.log("Pressed: ", action)
 
         if (action === "start") {
             if (!(gameIsActive)) {
@@ -34,7 +32,8 @@ buttons.forEach(btn => {
 })
 
 document.addEventListener("keydown", (e) => {
-
+    console.log("Pressed: " + e)
+    
     if (e.repeat) {
         return;
     }

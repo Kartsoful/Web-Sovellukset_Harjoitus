@@ -1,6 +1,17 @@
 :root {
     --header-height: 100px;
     --base-gap: 1rem;
+    --page-bg: #f4efe8;
+    --surface: #fffaf5;
+    --surface-alt: #ece5dc;
+    --header-bg: #3f4a56;
+    --text: #2f2a25;
+    --muted: #6f665d;
+    --border: #d8cec2;
+    --accent: #7b8f6a;
+    --accent-hover: #667858;
+    --accent-2: #b67b57;
+    --accent-2-hover: #9f6644;
 }
 
 .container {
@@ -11,17 +22,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: var(--text);
+    background-color: var(--page-bg);
 }
 
 h1 {
-    color: white;
+    color: #f7f3ee;
     margin: var(--base-gap);
     margin-left: 5rem;
 }
 
 header {
-    background-color: #333;
+    background-color: var(--header-bg);
     height: var(--header-height);
     display: flex;
     align-items: center;
@@ -30,7 +42,7 @@ header {
 
 aside {
     width: clamp(125px, 20vw, 250px);
-    background-color: #f4f4f4;
+    background-color: var(--surface-alt);
 
     position: sticky;
     top: 0;
@@ -50,11 +62,11 @@ aside ul li {
 
 aside a {
     text-decoration: none;
-    color: #333;
+    color: var(--text);
 }
 
 aside a:hover {
-    color: #007BFF;
+    color: var(--accent);
     font-weight: bold;
 }
 
@@ -66,7 +78,7 @@ aside p {
 
 main {
     flex: 1;
-    background-color: rgb(169, 159, 190);
+    background-color: var(--surface);
     min-width: 0;
 }
 
@@ -74,7 +86,7 @@ main p {
     margin: var(--base-gap);
     padding: var(--base-gap);
     line-height: 1.6;
-    border: solid 1px #ccc;
+    border: solid 1px var(--border);
     border-radius: 1rem;
 }
 
@@ -126,9 +138,13 @@ main li {
 
 .buttons button {
     font-size: 1.5rem;
-    background-color: #d2885a;
-    color: rgb(0, 0, 0);
+    background-color: var(--accent-2);
+    color: #fffaf5;
     border-radius: 0.5rem;
+}
+
+.buttons button:hover {
+    background-color: var(--accent-2-hover);
 }
 
 button[data-dir="up"] {
@@ -161,11 +177,15 @@ button[data-dir="down"] {
 
 .stats button {
     font-size: 1.2rem;
-    background-color: #5a6cd2;
-    color: rgb(0, 0, 0);
+    background-color: var(--accent);
+    color: #fffaf5;
     border-radius: 0.5rem;
     padding: var(--base-gap);
     margin: calc(var(--base-gap) / 2);
+}
+
+.stats button:hover {
+    background-color: var(--accent-hover);
 }
 
 .stats ul {
